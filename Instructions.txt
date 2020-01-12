@@ -1,0 +1,13 @@
+1. Copy Paste testdonate4 folder to NetBeansProject.
+2. Open Netbeans then click open project.
+3. Add mysql-connector in this folder.
+4. Go to localhost/phpmyadmin or MariaDB or MySQL Workbench or kung saan mo trip.
+5. Create database 'donatetest'.
+6. Import donatetest.sql in the 'donatetest' database.
+Note: Paconnect nalang sa Services nung database in case. Sa part ko gumagana naman kahit di ko naicoconnect sa Services every time.
+7. Check if Apache Tomcat ang server ng Java Web. Kung wala ka pang Apache Tomcat, then reinstall mo yung Netbeans then icheck mo yung Apache Tomcat sa installation kesa pakahirap ka pa na maginstall ng Apache Tomcat at ayusin pa ng maiconnect sa netbeans.
+8. Iright click ang project name then run para diretso na sa index. Pero kung trip mo lang magtingin ng ibang pages, irun file then diretso lang din sa index unless nalogin mo na. Hahaha too bad. 
+9. Test all you want. Pero maggawa ka nalang ng backup in case. kasi once na nasira mo yung pages, let's see kung ano ang mangyayari.
+10. Extract mo yung quixlab.zip. User Design template lang iyon. For reference only. 
+11. Palist ng defects/bugs kung may nakita kayo para mahanapan agad ng solusyon.
+ 

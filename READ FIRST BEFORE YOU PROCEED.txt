@@ -1,0 +1,42 @@
+PLEASE BASAHIN LAHAT NG NANDITO NG DI KAYO MAEWAN!!! 
+
+Hello, so far kumpleto na itong gawa ko. Iiwan ko na sa inyo yung front end since inayos ko na yung functions ng backend.
+
+Please wag na ninyo galawin masyado yung tables or yung may connection sa backend tulad ng name at value sa inputs. Pati file names wag na nino galawin. Nakaname na yung files in a way na mabilis ko mahanap yung mga related.
+
+kapag irurun ninyo yung program, gamitin ninyo yung Apache Tomcat at gustuhin ko man na maging offline yung datepicker at jquery,sorry di ko magawa. Wag na kayo mashock kung wala yung datepicker kapag offline. 
+
+kapag offline kasi yung datepicker, isa lang gumagana and need ko rin kasi na multiple datepicker para madaling magenter ng dates.
+
+yung quixlab.zip yun yung template na ginamit ko para sa design ng buong site at para mabilis ko lang maedit at ilagay yung need ko since andun na yung hinahap ko.
+
+mag ingat kayo sa front end, once na may nabura kayo na tag, malaki effect nun sa responsiveness ng site.
+
+sa chrome na ninyo irun yung program. Bootstrap 4 na ito since yun yung medyo latest. kapag nirun ninyo sa Internet Explorer, di gagana yung ilang functions.
+
+walang delete function. Please wag kayo magdelete ng entry sa localhost. Ginagamit ko rin kasi yung id as numbering sa entry.
+
+yung disable back button, di na iyon gumagana sa Chrome. Nilagay ko lang in case sa ibang browsers irurun.
+
+if may gusto kayo idagdag sa functions na existing or pages na naiisip ninyo magandang ilagay, sabihin nalang ninyo sa akin since ako yung may alam sa kung paano gumagana yung backend.
+
+Mga Aayusin
+
+- Logo =) Palitan nalang ninyo yung nasa images folder then isakto nalang ninyo yung measurements nung ipapalit ninyo para di maapektuhan masyado yung site.
+
+- Colors =) Pag aralan nalang ninyo paano yung coloring nung site. Ginamit ko lang yung kulay nung nasa template. Pero kung ok na sa inyo, hayaan mo na.
+
+- Labels =) Copy Paste then konting edit lang ginawa ko sa code. palitan nalang ninyo yung id at yung mga labels.
+
+- Testing =) Ontihan lang po ang kalokohan sa inputs. Kapag magtetest kayo, go ahead then if tapos na, palitan ninyo sa edit ng matinong inputs. Then if gusto ninyo irun file kada isa, wag muna kayo maglogin para matest kung magreredirect sa index lahat ng pages hangga't walang naglologin. yung logout page, gamitin lang ninyo para mawala yung cache ng account na nakalogin. yung sa backbutton lang yung di nawawala yung cache.
+
+- Dashboard/Home =) kayo na bahala maglagay ng ilalagay dun. wala na akong maisip. if trip ninyo yung analytics, sorry to disappoint you. Di ko pa alam kung paano gagawin yung ganung bagay since limited lang resources sa jsp.
+
+- Sidebar (Icons) =) palitan nalang ninyo kung ano ang mas appropriate na icons since di ko inedit yun.
+
+- sidebar.jsp =) dito kayo magedit ng sidebar. then icopy paste ninyo yung laman nito sa mga pages since di gumagana yung paggawa ng jsp file then itatawag nalang pagdating sa sidebar. hanggang sidebar end lang ang icopy paste ninyo. wag na ninyo galawin yung scripts since kada page may kanya kanyang scripts. Pwede itong irun file kung trip ninyo makita yung design na ginawa ninyo sa sidebar/navbar pero wala itong kwenta sa program. For easy designing lang.
+
+Hinay hinay lang sa pag edit kasi may chance na masira yung responsiveness at may chance rin na maapektuhan yung datas mula sa backend. Di pa ito yung final. Once na nasettle ninyo yung changes, tsaka na ulit ako babalik sa paggawa. Kayo na bahala kung paano ninyo mauunite yung changes na ginawa ninyo. If may time naman, ituturo ko rin sa inyo yung backend ng program. Good Luck!
+
+
+
