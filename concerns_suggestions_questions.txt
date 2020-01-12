@@ -2,8 +2,8 @@ clothes_add.jsp
 1.) Kita yung "localhost:8084/testdonate4/home.jsp". Question: Mawawala ba yan pag naka-online na?
 2.) May negative value sa Quantity. Na-i-input din ang character na "-". Nagiging pwede ang quantity na "-2.34234234244234234e+60".
 3.) Considered as 'Donation Entry Added Successfully' kahit na yung "Date Released" ay mas maaga sa "Date Received". For example, Date Received: Jan 6, 2019. Data Released: Dec 1, 1998.
-4.) Question: Panong "To be Donated/Donated to"? 
-5.) Suggestion: Kung may "Quantity" na, pwede ba na letters na lang at pwedeng i-input sa "Item Description"? Or baka maglagay ng size sa "Item Description"?
+4.) [Resolved] Question: Panong "To be Donated/Donated to"? 
+5.) [Resolved] Suggestion: Kung may "Quantity" na, pwede ba na letters na lang at pwedeng i-input sa "Item Description"? Or baka maglagay ng size sa "Item Description"?
 
 clothes_view.jsp
 1.) Di kita ang fieldbar ng "Search:"
@@ -21,55 +21,56 @@ food_add.jsp
 3.) May negative value sa Quantity. Na-i-input din ang character na "-". Nagiging pwede ang quantity na "-2.34234234244234234e+60".
 4.) Considered as 'Donation Entry Added Successfully' kahit na yung "Date Released" ay mas maaga sa "Date Received". For example, Date Received: Jan 6, 2019. Data Released: Dec 1, 1998.
 5.) Considered as 'Donation Entry Added Successfully' kahit na yung "Expiration Date" is nakalipas na or ang entered date is ang current date. Suggestion: Dapat may notification na lalabas after indutin ang "Submit" button about sa expiration date.
-6.) Question: Panong "To be Donated/Donated to"? 
-7.) Suggestion: Kung may "Quantity" na, pwede ba na letters na lang at pwedeng i-input sa "Item Description"? Or baka maglagay ng bigat sa "Item Description"? (E.g. 4Kg of Rice)
-8.) Nakalagay parin na "Add Clothing Donations" sa may tab.
+6.) [Resolved] Question: Panong "To be Donated/Donated to"? 
+7.) [Resolved] Suggestion: Kung may "Quantity" na, pwede ba na letters na lang at pwedeng i-input sa "Item Description"? Or baka maglagay ng bigat sa "Item Description"? (E.g. 4Kg of Rice)
+8.) [Resolved] Nakalagay parin na "Add Clothing Donations" sa may tab.
 
 food_view.jsp
-1.) Nakalagay parin na "Add Clothing Donations" sa may tab.
+1.) [Resolved] Nakalagay parin na "Add Clothing Donations" sa may tab.
 2.) Di kita ang fieldbar ng "Search:"
 
 food_edit.jsp
-1.) Nakalagay parin na "Add Clothing Donations" sa may tab.
+1.) [Resolved] Nakalagay parin na "Add Clothing Donations" sa may tab.
 2.) After i-click ang "Submit" button, naka-retain lang ang page sa food_edit_form.jsp Suggestion: dapat mag-redirect sa food_view.jsp or food_edit.jsp after
 3.) Di kita ang fieldbar ng "Search:"
 
 money_add.jsp
-1.) Nakalagay parin na "Add Clothing Donations" sa may tab.
+1.) [Resolved] Nakalagay parin na "Add Clothing Donations" sa may tab.
 2.) "Amount": Pwede ang negative value. Nagiging pwede ang amount na "-2.34234234452342342e+19". Na-i-input ang character na '-'. Walang currency.
 3.) Considered as 'Donation Entry Added Successfully' kahit na yung "Date Released" ay mas maaga sa "Date Received". For example, Date Received: Jan 6, 2019. Data Released: Dec 1, 1998.
 4.) Suggestion: Medyo nakakaewa sa kung ano ilalagay sa "Item Description". Anong other possible descriptions? Pwede ba na limited na lang "Item Description"? Pipili na lang kung "Check Donation" or "Cash Donation"?
+
 money_view.jsp
-1.) Nakalagay parin na "Add Clothing Donations" sa may tab.
+1.) [Resolved] Nakalagay parin na "Add Clothing Donations" sa may tab.
 2.) Di kita ang fieldbar ng "Search:"
 
 money_edit.jsp
-1.) Nakalagay parin na "Add Clothing Donations" sa may tab.
+1.) [Resolved] Nakalagay parin na "Add Clothing Donations" sa may tab.
 2.) Di kita ang fieldbar ng "Search:"
 3.) After i-click ang "Submit" button, naka-retain lang ang page sa money_edit_form.jsp Suggestion: dapat mag-redirect sa money_view.jsp or money_edit.jsp after
 
 school_add.jsp
-1.) Nakalagay parin na "Add Clothing Donations" sa may tab.
+1.) [Resolved] Nakalagay parin na "Add Clothing Donations" sa may tab.
 2.) Considered as 'Donation Entry Added Successfully' kahit na yung "Date Released" ay mas maaga sa "Date Received". For example, Date Received: Jan 6, 2019. Data Released: Dec 1, 1998.
 
 school_view.jsp
-1.) Nakalagay parin na "Add Clothing Donations" sa may tab.
+1.) [Resolved] Nakalagay parin na "Add Clothing Donations" sa may tab.
 2.) Di kita ang fieldbar ng "Search:"
 
 school_edit.jsp
-1.) Nakalagay parin na "Add Clothing Donations" sa may tab.
+1.) [Resolved] Nakalagay parin na "Add Clothing Donations" sa may tab.
 2.) Di kita ang fieldbar ng "Search:"
 3.) After i-click ang "Submit" button, naka-retain lang ang page sa school_edit_form.jsp Suggestion: dapat mag-redirect sa school_view.jsp or school_edit.jsp after
  
 item_cat_add.jsp
-1.) Question: Bakit "Home" ang nakalagay sa tab? Error ba yun or yun talaga ang nakalagay?
+1.) [Resolved] Question: Bakit "Home" ang nakalagay sa tab? Error ba yun or yun talaga ang nakalagay?
 
 item_cat_view.jsp
-1.) Nakalagay parin na "Add Clothing Donations" sa may tab.
+1.) [Resolved] Nakalagay parin na "Add Clothing Donations" sa may tab.
 2.) Di kita ang fieldbar ng "Search:"
 
 item_cat_edit.jsp
-1.) Nakalagay parin na "Add Clothing Donations" sa may tab.
+1.) [Resolved] Nakalagay parin na "Add Clothing Donations" sa may tab.
 2.) Di kita ang fieldbar ng "Search:"
 3.) After i-click ang "Submit" button, naka-retain lang ang page sa item_edit_form.jsp Suggestion: dapat mag-redirect sa item_cat_view.jsp or item_cat_edit.jsp after
 
@@ -89,5 +90,6 @@ user_view.jsp
 Others:
 1.) Walang obvious button sa email (e.g. hazel@email.com) sa may top-right. Hindi agad obvious kung nasan yung "logout", pati na rin yung "add users" at "view users".
 2.) "Donation Categories": After i-click yung dropdown ng "Item Category", bumababa yung "Accounts" hanggang sa mawala na siya sa line of sight ng user. Walang scroll para ma-navigate sa "Pages" under ng "Accounts" habang naka-drop down ang "Item Category"
-3.) Di ko gets ang "Add Item Category". Gets ko kung anong gagawin pero ano purpose niya? Nag-add ka ng category...tapos?
+3.) [Resolved] Di ko gets ang "Add Item Category". Gets ko kung anong gagawin pero ano purpose niya? Nag-add ka ng category...tapos?
 4.) Kahit logout na, accessible pa rin ang site pag pinindot ang 'back button' [nabanggit na ni Hazel].
+5.) Add "Donation Auction something" as a category
