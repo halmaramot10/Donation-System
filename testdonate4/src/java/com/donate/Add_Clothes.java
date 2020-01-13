@@ -2,6 +2,7 @@ package com.donate;
 
 import java.io.*;
 import java.sql.*;
+import java.text.SimpleDateFormat;
 import javax.servlet.*;
 import javax.servlet.annotation.*;
 import javax.servlet.http.*;
@@ -31,9 +32,11 @@ public class Add_Clothes extends HttpServlet {
             cond = request.getParameter("condition");
             stat = request.getParameter("status");
             donate = request.getParameter("donated");
-            daterec = request.getParameter("received");
+            //daterec = request.getParameter("received");
             datedon = request.getParameter("released");
             
+            SimpleDateFormat sdf=new SimpleDateFormat("MM/dd/yyyy");
+            daterec = sdf.format(new java.util.Date());
             con = DB.getConnection();
             st = con.createStatement();
             String sql = "insert into clothes_donate(item_desc,item_type,quantity,conditions,status,donatedto,daterec,datedon) values "

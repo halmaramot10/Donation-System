@@ -306,7 +306,7 @@
                                             <label class="col-lg-4 col-form-label" for="position">Date Received
                                             </label>
                                             <div class="col-lg-6">
-                                                <input name="received" type="text" class="form-control" id="datepicker1" required>
+                                                <input name="received" type="text" class="form-control" value="">
                                             </div>
                                         </div> 
                                                 

@@ -364,7 +364,7 @@ public final class clothes_005fadd_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("                                            <label class=\"col-lg-4 col-form-label\" for=\"position\">Date Received\n");
       out.write("                                            </label>\n");
       out.write("                                            <div class=\"col-lg-6\">\n");
-      out.write("                                                <input name=\"received\" type=\"text\" class=\"form-control\" id=\"datepicker1\" required>\n");
+      out.write("                                                <input name=\"received\" type=\"text\" class=\"form-control\" value=\"\">\n");
       out.write("                                            </div>\n");
       out.write("                                        </div> \n");
       out.write("                                                \n");
