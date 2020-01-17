@@ -24,6 +24,20 @@
     <link rel="stylesheet" href="./plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
     <!-- Custom Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <!--script code -->
+    <script type="text/javascript">
+        function lettersOnly(input){
+            var regex = /[^a-z ]/gi;
+            input.value = input.value.replace(regex, "");
+        }
+        
+        function numOnly(input){
+            var regex = /[^0-9]/;
+            input.value = input.value.replace(regex, "");
+	}
+    </script>
+    <!--script code -->
 </head>
 
 <body>
@@ -229,7 +243,7 @@
                                             <label class="col-lg-4 col-form-label" for="fnamereg">First Name <span class="text-danger">*</span>
                                             </label>
                                             <div class="col-lg-6">
-                                                <input type="text" class="form-control" id="val-firstname" name="fnamereg" required>
+                                                <input type="text" class="form-control" id="val-firstname" name="fnamereg" onkeyup="lettersOnly(this)" required>
                                             </div>
                                         </div>
                                         
@@ -237,7 +251,7 @@
                                             <label class="col-lg-4 col-form-label" for="mnamereg">Middle Name
                                             </label>
                                             <div class="col-lg-6">
-                                                <input type="text" class="form-control" id="val-middlename" name="mnamereg">
+                                                <input type="text" class="form-control" id="val-middlename" name="mnamereg" onkeyup="lettersOnly(this)">
                                             </div>
                                         </div>
                                         
@@ -245,7 +259,7 @@
                                             <label class="col-lg-4 col-form-label" for="lnamereg">Last Name<span class="text-danger">*</span>
                                             </label>
                                             <div class="col-lg-6">
-                                                <input type="text" class="form-control" id="val-lastname" name="lnamereg" required>
+                                                <input type="text" class="form-control" id="val-lastname" name="lnamereg" onkeyup="lettersOnly(this)" required>
                                             </div>
                                         </div>
                                                                               
@@ -264,7 +278,7 @@
                                             <label class="col-lg-4 col-form-label" for="phonereg">Phone <span class="text-danger">*</span>
                                             </label>
                                             <div class="col-lg-6">
-                                                <input type="text" class="form-control" id="val-phone" name="phonereg" required>
+                                                <input type="text" class="form-control" id="val-phone" name="phonereg" onkeyup="numOnly(this)" required>
                                             </div>
                                         </div>
                                         
@@ -294,10 +308,23 @@
                                         
                                         <div class="form-group row">
                                             <div class="col-lg-8 ml-auto">
-                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                <button type="submit" onclick="trim()" class="btn btn-primary">Submit</button>
                                             </div>
                                         </div>
                                         
+                                        <script>
+                                            function trim(){
+                                                var x = document.getElementById("val-firstname").value;
+                                                var y = document.getElementById("val-middlename").value;
+                                                var z = document.getElementById("val-lastname").value;
+                                                document.getElementById("insert dito id ng backend or something").innerHTML = x;
+                                                document.getElementById("insert dito id ng backend or something").innerHTML = y;
+                                                document.getElementById("insert dito id ng backend or something").innerHTML = z;
+                                                x = x.trim();
+                                                y = y.trim();
+                                                z = z.trim();
+                                            }
+                                        </script>
                                     </form>
                                 </div>
                             </div>

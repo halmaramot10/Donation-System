@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="./plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
     <!-- Custom Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    
 </head>
 
 <body>
@@ -240,7 +242,7 @@
                                                 <td><%=rs.getString("id") %></td>
                                                 <td><%=rs.getString("item_desc")%></td>
                                                 <td><%=rs.getString("item_type")%></td>
-                                                <td><%=rs.getString("quantity")%></td>
+                                                <td id="quant" type="number" onblur="validate()"><%=rs.getString("quantity")%></td>
                                                 <td><%=rs.getString("status")%></td>
                                                 <td><%=rs.getString("donatedto")%></td>
                                                 <td><%=rs.getString("daterec")%></td>
@@ -248,7 +250,7 @@
                                                 <td><%=rs.getString("datedon")%></td>
                                             </tr>
                                             
-                                             <% 
+                                            <% 
                                                 }
 
                                                 } catch (Exception e) {

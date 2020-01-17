@@ -6,17 +6,17 @@ clothes_add.jsp
 5.) [Resolved] Suggestion: Kung may "Quantity" na, pwede ba na letters na lang at pwedeng i-input sa "Item Description"? Or baka maglagay ng size sa "Item Description"?
 
 clothes_view.jsp
-1.) Di kita ang fieldbar ng "Search:"
+1.) [Resolved] Di kita ang fieldbar ng "Search:"
 
 clothes_edit.jsp
-1.) Di kita ang fieldbar ng "Search:"
+1.) [Resolved] Di kita ang fieldbar ng "Search:"
 
 clothes_edit_form.jsp
 1.) After i-click ang "Submit" button, naka-retain lang ang page sa clothes_edit_form.jsp. Suggestion: dapat mag-redirect sa clothes_edit.jsp or clothes_view.jsp after
-2.) "Quality": Pwede ang negative value. Na-i-input din ang character na '-'. Nagiging pwede ang quantity na "-2.34234234244234234e+60".
+2.) "Quantity": Pwede ang negative value. Na-i-input din ang character na '-'. Nagiging pwede ang quantity na "-2.34234234244234234e+60".
 
 food_add.jsp
-1.) "Quality": Simpleng numeric number lang for quality kahit anong type ng food. Suggestion: may unit sa "Quantity" depende sa type ng food. E.g., okay lang ang numeric number as quantity for canned goods, pero sa Rice dapat may "Quantity(Kg)", or may option na pwede pagpilian for unit sa Quantity; "kg", or "g", etc.
+1.) "Quantity": Simpleng numeric number lang for quality kahit anong type ng food. Suggestion: may unit sa "Quantity" depende sa type ng food. E.g., okay lang ang numeric number as quantity for canned goods, pero sa Rice dapat may "Quantity(Kg)", or may option na pwede pagpilian for unit sa Quantity; "kg", or "g", etc.
 2.) Kita yung "http://localhost:8084/testdonate4/food_add.jsp". Question: Mawawala ba yan pag naka-online na?
 3.) May negative value sa Quantity. Na-i-input din ang character na "-". Nagiging pwede ang quantity na "-2.34234234244234234e+60".
 4.) Considered as 'Donation Entry Added Successfully' kahit na yung "Date Released" ay mas maaga sa "Date Received". For example, Date Received: Jan 6, 2019. Data Released: Dec 1, 1998.
