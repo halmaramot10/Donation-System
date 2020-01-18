@@ -25,7 +25,7 @@
     <!-- Custom Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     
-    <!--script code -->
+    <!-- script code for restricting user input -->
     <script type="text/javascript">
         function lettersOnly(input){
             var regex = /[^a-z ]/gi;
@@ -37,7 +37,7 @@
             input.value = input.value.replace(regex, "");
 	}
     </script>
-    <!--script code -->
+    <!--script code for restricting user input -->
 </head>
 
 <body>

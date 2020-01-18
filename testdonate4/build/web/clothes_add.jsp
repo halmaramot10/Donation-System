@@ -29,6 +29,22 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- script code for restricting user input -->
+    <script type="text/javascript">
+        function lettersOnly(input){
+            var regex = /[^a-z ]/gi;
+            input.value = input.value.replace(regex, "");
+        }
+        
+        function numOnly(input){
+            var regex = /[^0-9]/;
+            input.value = input.value.replace(regex, "");
+	}
+        
+        //
+    </script>
+    <!--script code for restricting user input -->
 </head>
 
 <body>
@@ -267,7 +283,7 @@
                                             <label class="col-lg-4 col-form-label" for="quantity">Quantity<span class="text-danger">*</span>
                                             </label>
                                             <div class="col-lg-6">
-                                                <input type="number" class="form-control" id="quantity" name="quantity" required>
+                                                <input type="number" class="form-control" id="quantity" name="quantity" onkeyup="numOnly(this)" required>
                                             </div>
                                         </div>
                                                 
