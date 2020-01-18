@@ -283,7 +283,7 @@
                                             <label class="col-lg-4 col-form-label" for="quantity">Quantity<span class="text-danger">*</span>
                                             </label>
                                             <div class="col-lg-6">
-                                                <input type="number" class="form-control" id="quantity" name="quantity" onkeyup="numOnly(this)" required>
+                                                <input type="number" class="form-control" id="quantity" name="quantity" min="0" onkeyup="numOnly(this)" required>
                                             </div>
                                         </div>
                                         
