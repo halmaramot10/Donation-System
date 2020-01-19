@@ -312,7 +312,8 @@
                                             </div>
                                         </div>
                                         
-                                        <script>
+                                        <!-- trimming for first name, middle name, and last name -->
+                                        <script language="javascript">
                                             function trim(){
                                                 var x = document.getElementById("val-firstname").value;
                                                 var y = document.getElementById("val-middlename").value;
@@ -325,6 +326,7 @@
                                                 z = z.trim();
                                             }
                                         </script>
+                                        <!-- trimming for first name, middle name, and last name -->
                                     </form>
                                 </div>
                             </div>

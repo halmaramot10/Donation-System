@@ -23,6 +23,13 @@
     <link rel="stylesheet" href="./plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
     <!-- Custom Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <script type="text/javascript">
+        function itemDesc(input){
+            var regex = /[^a-z +\[+\]+\(+\)]/gi;
+            input.value = input.value.replace(regex, ""); 
+        }
+    </script>
 </head>
 
 <body>
@@ -253,15 +260,25 @@
                                             <label class="col-lg-4 col-form-label" for="item">Item Category Description <span class="text-danger">*</span>
                                             </label>
                                             <div class="col-lg-6">
-                                                <input type="text" class="form-control" id="item" name="itemcategory" required>
+                                                <input type="text" class="form-control" id="item" name="itemcategory" onkeyup="itemDesc(this)" required>
                                             </div>
                                         </div>
                                                                                  
                                         <div class="form-group row">
                                             <div class="col-lg-8 ml-auto">
-                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                <button type="submit" onclick="trim()" class="btn btn-primary">Submit</button>
                                             </div>
                                         </div>
+                                        
+                                        <!-- trimming for item category description -->
+                                        <script language="javascript">
+                                            function trim(){
+                                                var x = document.getElementById("item").value;
+                                                document.getElementById("insert dito id ng backend or something").innerHTML = x;
+                                                x = x.trim();
+                                            }
+                                        </script>
+                                        <!-- trimming for item category description -->
                                         
                                     </form>
                                 </div>
