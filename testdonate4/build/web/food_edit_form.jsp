@@ -14,7 +14,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Add Clothing Donations</title>
+    <title>Edit Food Donations</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
     <!-- Pignose Calender -->
@@ -29,6 +29,20 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- script code for restricting user input -->
+    <script type="text/javascript">
+        function lettersOnly(input){
+            var regex = /[^a-z ]/gi;
+            input.value = input.value.replace(regex, "");
+        }
+        
+        function numOnly(input){
+            var regex = /[^0-9]/g;
+            input.value = input.value.replace(regex, "");
+	}
+    </script>
+    <!--script code for restricting user input -->
 </head>
 
 <body>
@@ -291,7 +305,7 @@
                                             <label class="col-lg-4 col-form-label" for="quantity">Quantity<span class="text-danger">*</span>
                                             </label>
                                             <div class="col-lg-6">
-                                                <input type="number" class="form-control" id="quantity" name="quantity" value="<%=qty%>">
+                                                <input type="number" class="form-control" id="quantity" name="quantity" value="<%=qty%>" min="0" onkeyup="numOnly(this)">
                                             </div>
                                         </div>
                                                 

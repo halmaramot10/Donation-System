@@ -14,7 +14,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Edit Clothing Donations</title>
+    <title>Edit Money Donations</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
     <!-- Pignose Calender -->
@@ -24,6 +24,20 @@
     <link rel="stylesheet" href="./plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
     <!-- Custom Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <!-- script code for restricting user input -->
+    <script type="text/javascript">
+        function lettersOnly(input){
+            var regex = /[^a-z ]/gi;
+            input.value = input.value.replace(regex, "");
+        }
+        
+        function numOnly(input){
+            var regex = /[^0-9]/g;
+            input.value = input.value.replace(regex, "");
+	}
+    </script>
+    <!--script code for restricting user input -->
 </head>
 
 <body>
@@ -285,7 +299,7 @@
                                             <label class="col-lg-4 col-form-label" for="quantity">Quantity<span class="text-danger">*</span>
                                             </label>
                                             <div class="col-lg-6">
-                                                <input type="number" class="form-control" id="itemdesc" name="amount" value="<%=amt%>" required>
+                                                <input type="number" class="form-control" id="itemdesc" name="amount" value="<%=amt%>" min="0" onkeyup="numOnly(this)" required>
                                             </div>
                                         </div>
                                         

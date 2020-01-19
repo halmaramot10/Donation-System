@@ -38,7 +38,7 @@
         }
         
         function numOnly(input){
-            var regex = /[^0-9]/;
+            var regex = /[^0-9]/g;
             input.value = input.value.replace(regex, "");
 	}
     </script>

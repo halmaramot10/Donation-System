@@ -24,6 +24,20 @@
     <link rel="stylesheet" href="./plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
     <!-- Custom Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <!-- script code for restricting user input -->
+    <script type="text/javascript">
+        function lettersOnly(input){
+            var regex = /[^a-z ]/gi;
+            input.value = input.value.replace(regex, "");
+        }
+        
+        function numOnly(input){
+            var regex = /[^0-9]/g;
+            input.value = input.value.replace(regex, "");
+	}
+    </script>
+    <!--script code for restricting user input -->
 </head>
 
 <body>
@@ -286,7 +300,7 @@
                                             <label class="col-lg-4 col-form-label" for="quantity">Quantity<span class="text-danger">*</span>
                                             </label>
                                             <div class="col-lg-6">
-                                                <input type="number" class="form-control" id="itemdesc" name="quantity" value="<%=qty%>" required>
+                                                <input type="number" class="form-control" id="itemdesc" name="quantity" min="0" value="<%=qty%>" onkeyup="numOnly(this)" required>
                                             </div>
                                         </div>
                                                 
