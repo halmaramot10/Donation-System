@@ -24,6 +24,13 @@
     <link rel="stylesheet" href="./plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
     <!-- Custom Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <script type="text/javascript">
+        function itemDesc(input){
+            var regex = /[^a-z +\[+\]+\(+\)]/gi;
+            input.value = input.value.replace(regex, ""); 
+        }
+    </script>
 </head>
 
 <body>
@@ -275,7 +282,7 @@
                                             <label class="col-lg-4 col-form-label" for="item">Item Category Description <span class="text-danger">*</span>
                                             </label>
                                             <div class="col-lg-6">
-                                                <input type="text" class="form-control" id="item" name="itemcategory" value="<%=item%>">
+                                                <input type="text" class="form-control" id="item" name="itemcategory" value="<%=item%>" onkeyup="itemDesc(this)">
                                             </div>
                                         </div>
                                                                                                                                     
